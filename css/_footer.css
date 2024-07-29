@@ -1,0 +1,94 @@
+.footer {
+  background-color: var(--black);
+}
+
+.footer__container {
+  padding-top: 47px;
+  padding-bottom: 48px;
+}
+
+.footer__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  outline: none;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.footer__item-link {
+  outline: none;
+}
+
+.footer__item-link:focus path {
+  fill: var(--white);
+}
+
+.footer__item-link:active path {
+  fill: var(--purple-light);
+}
+
+.footer__vk-svg,
+.footer__ok-svg {
+  display: block;
+
+  fill: var(--gray-very-light);
+}
+
+@media (max-width: 1280px) {
+  .footer__container {
+    padding-top: 40px;
+    padding-bottom: 41px;
+  }
+
+  .footer__vk-svg,
+  .footer__ok-svg {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer__wrap {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .footer__blanchard-logo {
+    width: 97px;
+    height: 22px;
+  }
+
+  .footer__list {
+    margin-bottom: 20px;
+  }
+
+  .footer__vk-svg,
+  .footer__ok-svg {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (any-hover: hover) {
+  .footer__item-link:hover:not(:active) path {
+    fill: var(--white);
+  }
+}

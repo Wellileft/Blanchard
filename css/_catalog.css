@@ -1,0 +1,168 @@
+.catalog {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.catalog__title {
+  margin-bottom: 17px;
+}
+
+.catalog__text {
+  max-width: 1080px;
+  margin-bottom: 38px;
+}
+
+.catalog__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__content-wrap {
+  width: calc(750 / 1600 * 100%);
+}
+
+.catalog__painter-info {
+  display: none;
+}
+
+.catalog__painter-info.active {
+  display: block;
+  animation-name: fade-in;
+  animation-duration: .5s;
+}
+
+.catalog__portrait {
+  margin-bottom: 20px;
+  background-color: var(--gray);
+}
+
+.catalog__title-third {
+  margin-bottom: 10px;
+}
+
+.catalog__portrait-unknown {
+  margin-bottom: 20px;
+}
+
+.catalog__title-unknown {
+  margin-bottom: 8px;
+}
+
+.catalog__text-unknown {
+  margin-bottom: 10px;
+}
+
+.catalog__link-unknown {
+  font-size: 16px;
+  font-weight: var(--semi-bold);
+  line-height: 22px;
+  color: var(--purple-light);
+}
+
+.catalog__lifetime {
+  margin-bottom: 13px;
+  font-size: 12px;
+  font-weight: var(--regular);
+  line-height: 16px;
+  color: var(--gray-light);
+}
+
+.catalog__accordion {
+  width: calc(800 / 1600 * 100%);
+}
+
+@media (max-width: 1280px) {
+  .catalog__content-wrap {
+    width: calc(484 / 1024 * 100%);
+  }
+
+  .catalog__lifetime {
+    margin-bottom: 15px;
+  }
+
+  .catalog__text-unknown {
+    max-width: 430px;
+    line-height: 22px;
+  }
+
+  .catalog__accordion {
+    width: calc(484 / 1024 * 100%);
+    padding-top: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog {
+    padding-bottom: 30px;
+  }
+
+  .catalog__title {
+    margin-bottom: 16px;
+  }
+
+  .catalog__wrap {
+    flex-direction: column-reverse;
+    justify-content: unset;
+  }
+
+  .catalog__text {
+    margin-bottom: 20px;
+  }
+
+  .catalog__accordion {
+    width: calc(768 / 768 * 100%);
+    margin-bottom: 50px;
+    padding-top: 1px;
+  }
+
+  .catalog__content-wrap {
+    width: calc(768 / 768 * 100%);
+  }
+
+  .catalog__portrait {
+    margin-bottom: 10px;
+  }
+
+  .catalog__text-unknown {
+    margin-bottom: 10px;
+  }
+
+  .catalog__lifetime {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .catalog {
+    padding-top: 50px;
+    padding-bottom: 15px;
+  }
+
+  .catalog__title {
+    margin-bottom: 12px;
+  }
+
+  .catalog__text-auctioneers {
+    display: none;
+  }
+
+  .catalog__accordion {
+    width: calc(320 / 320 * 100%);
+  }
+
+  .catalog__content-wrap {
+    width: calc(320 / 320 * 100%);
+  }
+
+  .catalog__lifetime {
+    margin-bottom: 11px;
+  }
+
+  .catalog__portrait-unknown {
+    margin-bottom: 10px;
+  }
+
+  .catalog__text-unknown {
+    margin-bottom: 0;
+  }
+}
